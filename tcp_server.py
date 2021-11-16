@@ -12,7 +12,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         conn, addr = s.accept()
         with conn:
             while True:
-        #データ受け取る
+        #データ受け取るよ
                 data = conn.recv(1024)
                 if not data:
                     break
